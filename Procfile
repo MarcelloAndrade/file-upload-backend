@@ -1,1 +1,1 @@
-web: apm start
+web: npm start

@@ -13,7 +13,7 @@ const io = socket(server);
 
 // CONFIGURACAO do websocket
 io.on("connection", socket => {
-    socket.on("connectRom", box => {
+    socket.on("connectRoom", box => {
         socket.join(box);
     })
 });

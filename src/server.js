@@ -25,6 +25,7 @@ mongoose.connect("mongodb+srv://root:root123@cluster0-md2pq.mongodb.net/file-upl
 });
 
 app.use( (req, res, next) => {
+    console.log("socket" +req.io);
     req.io = io;
     return next();
 });

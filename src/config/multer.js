@@ -14,12 +14,12 @@ module.exports = {
         },
 
         // nome do arquivo final no diretorio
-        filename: (req, file, cd) => {
+        filename: (req, file, cb) => {
             crypto.randomBytes(16, (err, hash) => {
                 if(err) cb(err);
                 
                 file.key = `${hash.toString("hex")}-${file.originalname}`;
-                cd(null, file.key);
+                cb(null, file.key);
             });
         }
     })

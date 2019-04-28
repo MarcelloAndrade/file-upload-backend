@@ -1,4 +1,4 @@
-Backend File Upload Node JS
+This project was built with Node JS for personal study
 
 ## Available Scripts
 In the project directory, you can run:

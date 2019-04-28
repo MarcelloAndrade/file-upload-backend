@@ -9,7 +9,7 @@ module.exports = {
 
     // LOCAL de armazenamento dos arquivos (disco, nuvem)
     storage: multer.diskStorage({
-        destination: (req, fole, cb) => {
+        destination: (req, file, cb) => {
             cb(null, path.resolve(__dirname, "..", "..", "tmp") );
         },
 
